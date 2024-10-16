@@ -14,7 +14,7 @@
   * 링크 : `[표시되는 문자](url 또는 path)`
     * 예시 : [001.py](git_class/001.py)
   * 이미지 : `![표시되는 문자](url 또는 path)`
-    * 예시 : ![snoopy](~/Desktop/hand_snoopy.jpeg)
+    * 예시 : ![snoopy](~/Users/t2023-m0072/Desktop/hand_snoopy.jpeg)
     * 이미지의 너비와 높이를 직접 조절하는 것은 불가
   * 텍스트 강조 : 텍스트 양 끝에 붙이기
     * **볼드체** : `**` 
