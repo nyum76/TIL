@@ -64,7 +64,7 @@ kmeans.fit(data_scaled)
 # 군집 결과 할당
 data['Cluster'] = kmeans.labels_    # labels_ : 각 데이터 포인트가 속한 군집 레이블 반환
 ```
-![](elbow_graph.png)
+![](/Users/t2023-m0072/Desktop/TIL/ML/pic/elbow_graph.png)
 ```py
 # 군집 시각화
 # 2차원으로 군집 시각화 (연령 vs 소득)
@@ -80,7 +80,7 @@ sns.scatterplot(x=data['Annual Income (k$)'], y=data['Spending Score (1-100)'], 
 plt.title('Clusters of customers (Annual Income vs Spending Score)')
 plt.show()
 ```
-![](scatterplot.png)
+![](/pic/scatterplot.png)
 ![](scatterplot2.png)
 ### 계층적 군집화 (Hierarchical Clustering)
 : 데이터포인트를 점진적으로 병합 or 분할해 군집 형성
