@@ -49,7 +49,7 @@ print(f'R^2 Score: {r2}')    # r2 값이 1에 가까운 값이 나올수록 예�
 
 ```
 * 예측 결과
-![](</Users/t2023-m0072/Desktop/TIL/ML/linear_test.png>)
+![](<linear_test.png>)
 ### 다항회귀 (Polynomial Regression)
 : 종속변수와 독립변수 간의 비선형관계를 모델링
 -> 선형회귀보다 추론력이 높음
@@ -81,7 +81,7 @@ print(f'R^2 Score: {r2}')    # r2 값이 1에 가까운 값이 나올수록 예�
 
 ### 나이브베이즈(Naive Bayes)
 * 베이즈 정리
-  ![Bayes](/Users/t2023-m0072/Desktop/TIL/ML/Bayes.png)
+  ![Bayes](Bayes.png)
 * Naive : 각 특징(Feature)이 독립적 
 * 모델이 단순. 효율적 -> 텍스트 분류 문제에 사용
 * 종류
@@ -95,7 +95,7 @@ print(f'R^2 Score: {r2}')    # r2 값이 1에 가까운 값이 나올수록 예�
     * 루트노드 : 트리의 최상위 노드. 전체 데이터셋 나타냄
     * 리프노드 : 트리의 끝 노드. 클래스 레이블을 나타냄
   * 가지
-![decision_tree](~/Users/t2023-m0072/Desktop/TIL/ML/decision_tree.png)
+![decision_tree](decision_tree.png)
 * 분할기준
   * 정보이득 : 엔트로피(Entropy)값으로 데이터를 나누는 기준
   * 엔트로피 : 불확실성을 나타냄. 낮을수록 좋음
