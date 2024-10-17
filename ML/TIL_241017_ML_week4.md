@@ -64,7 +64,7 @@ kmeans.fit(data_scaled)
 # 군집 결과 할당
 data['Cluster'] = kmeans.labels_    # labels_ : 각 데이터 포인트가 속한 군집 레이블 반환
 ```
-![](/Users/t2023-m0072/Desktop/TIL/ML/pic/elbow_graph.png)
+![elbow_graph](/ML/pic/elbow_graph.png)
 ```py
 # 군집 시각화
 # 2차원으로 군집 시각화 (연령 vs 소득)
@@ -80,8 +80,8 @@ sns.scatterplot(x=data['Annual Income (k$)'], y=data['Spending Score (1-100)'], 
 plt.title('Clusters of customers (Annual Income vs Spending Score)')
 plt.show()
 ```
-![](/pic/scatterplot.png)
-![](scatterplot2.png)
+![](/ML/pic/scatterplot.png)
+![](/ML/pic/scatterplot2.png)
 ### 계층적 군집화 (Hierarchical Clustering)
 : 데이터포인트를 점진적으로 병합 or 분할해 군집 형성
 * 거리 행렬 만듬 ( 데이터 포인트 간의 거리 계산한 값 )
@@ -113,7 +113,7 @@ X = df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 ```
-![](print(df.head()).png)
+![](/ML/pic/print(df.head()).png)
 ```py
 # 덴드로그램 생성
 plt.figure(figsize=(10, 7))
@@ -123,7 +123,7 @@ plt.xlabel('Customers')
 plt.ylabel('Euclidean distances')
 plt.show()
 ```
-![](Hierarchical_dendrogram.png)
+![](/ML/pic/Hierarchical_dendrogram.png)
 ```py
 # 계층적 군집화 모델 생성
 hc = AgglomerativeClustering(n_clusters=5, metric='euclidean', linkage='ward')
@@ -144,7 +144,7 @@ plt.ylabel('Annual Income (k$)')
 plt.legend()
 plt.show()
 ```
-![](Hierarchical.png)
+![](/ML/pic/Hierarchical.png)
 ```py
 from sklearn.metrics import silhouette_score
 
@@ -152,7 +152,7 @@ from sklearn.metrics import silhouette_score
 silhouette_avg = silhouette_score(X_scaled, y_hc)
 print(f'Silhouette Score: {silhouette_avg}')
 ```
-![](Hierarchical_score.png)
+![](/ML/pic/Hierarchical_score.png)
 ### DBSCAN 
 ( Density-Based Spatial Clustering of Applications with Noise)
 * 장점 
@@ -186,7 +186,7 @@ X = df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 ```
-![](print(df.head()).png)
+![](/ML/pic/print(df.head()).png)
 ```py
 # Scikit-learn의 DBSCAN을 사용하여 DBSCAN 군집화 수행
 from sklearn.cluster import DBSCAN
@@ -205,7 +205,7 @@ sns.scatterplot(x='Annual Income (k$)', y='Spending Score (1-100)', hue='Cluster
 plt.title('DBSCAN Clustering of Mall Customers')
 plt.show()
 ```
-![](DBSCAN_clustering.png)
+![](/ML/pic/DBSCAN_clustering.png)
 
 
 ------
@@ -246,7 +246,7 @@ y = mnist.target
 print(X.head())
 print(y.head())
 ```
-![](MNIST_dataset.png)
+![](/ML/pic/MNIST_dataset.png)
 ```py
 from sklearn.preprocessing import StandardScaler
 
@@ -291,7 +291,7 @@ plt.xlabel('Principal Component 1')
 plt.ylabel('Principal Component 2')
 plt.show()
 ```
-![](PCA.png)
+![](/ML/pic/PCA.png)
 ### t - SNE
 (t - Distributed Stochastic Neighbor Embedding)
 - 통계적 기법을 통해 고차원 데이터를 저차원으로 변환하여 시각화
@@ -334,7 +334,7 @@ plt.xlabel('t-SNE Component 1')
 plt.ylabel('t-SNE Component 2')
 plt.show()
 ```
-![](t-SNE.png)
+![](/ML/pic/t-SNE.png)
 ### LDA
 * 차원 축소와 분류를 동시에 수행
 * 데이터간 클래스 분산 최대화, 클래스 내 분산 최소화
@@ -374,9 +374,9 @@ plt.ylabel('LDA Component 2')
 plt.show()
 
 ```
-![](LDA.png)
+![](/ML/pic/LDA.png)
 
 #### 실습하며 느낀 점
 T-SNE를 수행하는 코드가 로딩이 정말 오래 걸렸다. (10분 정도 기다림;)
 * 로딩이 너무 오래 걸리는 모습
-![](LOADING.png)
+![](/ML/pic/LOADING.png)
