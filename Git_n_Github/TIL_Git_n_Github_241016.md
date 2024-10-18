@@ -26,7 +26,7 @@ A. 변경 사항이 있을 때, 전체를 커밋하지 않고 원하는 변경�
    * 해당 폴더 안에 a.txt 라는 텍스트 파일을 만들고, "add a.txt" 라는 커밋메세지로 커밋 생성
    * b.txt 라는 텍스트 파일을 만들고, "add b.txt"라는 커밋메세지로 커밋 생성
    * a.txt 파일 수정 후 "update a.txt" 라는 커밋메세지로 커밋 생성
-     * 예시 ![example](<edt_git_commit_example 2.png>)
+     * 예시 ![example](/img/edt_git_commit_example%202.png)
 
 ---
 
