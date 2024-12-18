@@ -10,9 +10,16 @@
 > **💡 '아, 그렇구나.'** 마인드 장착❗️
 
 --------
+### [DAY 61](DAY61_241218.md#day-61)
+
+#### - exec: "docker-credential-desktop.exe" 에러
+#### - Django ORM Manager
+
+
+---
 ### [DAY 56](DAY56_241211.md#day56)
-#### - Django 맛보기
-#### - Project, App 실습
+#### - Django 기초
+#### - Django Project, App 실습
 
 
 ---
