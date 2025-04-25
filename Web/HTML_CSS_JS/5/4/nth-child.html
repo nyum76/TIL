@@ -1,0 +1,28 @@
+<head>
+  <style>
+    /* 구조적 가상 클래스 선택자 */
+    p:nth-child(1){ /* 부모요소의 자식요소중, n번째인 p태그 선택 */
+      color:chartreuse;
+    }
+    p:nth-last-child(2){
+      color:dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <p>lorem 0</p> <!-- 부모인 body 태그의 첫 번째 자식 요소가 p 태그이므로 스타일 적용-->
+  <div>
+    <p>lorem 1</p> <!-- 부모인 div 태그의 첫 번째 자식 요소가 p 태그이므로 스타일 적용-->
+    <p>lorem 2</p>
+    <p>lorem 3</p> <!-- 부모인 div 태그의 뒤에서 2번째 요소가 p 태그이므로 스타일 적용-->
+    <p>lorem 4</p>
+  </div>
+  <div>
+    <p>lorem 5</p> <!-- 부모인 div 태그의 첫 번째 자식 요소가 p 태그이므로 스타일 적용-->
+    <p>lorem 6</p>
+    <p>lorem 7</p>
+    <p>lorem 8</p>
+    <p>lorem 9</p> <!-- 부모인 div 태그의 뒤에서 2번째 요소가 p 태그이므로 스타일 적용-->
+    <p>lorem 10</p>
+  </div>
+</body>

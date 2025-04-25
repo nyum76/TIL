@@ -1,0 +1,22 @@
+<head>
+  <style>
+    /* 구조적 가상 클래스 선택자 */
+    p:first-of-type{ /* 부모의 자식요소 중 첫 번째로 등장하는 p 태그 선택 */
+      color:dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <p>lorem 0</p> <!-- 선택 -->
+  <div>
+    <p>lorem 1</p> <!-- 선택 -->
+    <span>span 1</span>
+    <p>lorem 2</p> 
+  </div>
+  <div>
+    <p>lorem 3</p> <!-- 선택 -->
+    <span>span 2</span>
+    <span>span 3</span>
+    <p>lorem 4</p>
+  </div>
+</body>
