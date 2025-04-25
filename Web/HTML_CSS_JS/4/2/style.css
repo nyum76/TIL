@@ -1,0 +1,4 @@
+/* 외부 스타일 시트 (external style sheet) 사용하기 : HTML 문서에 연결시 link 태그 사용*/
+h1{
+  color:red;
+}
