@@ -1,0 +1,20 @@
+a {
+  font-size: 50px;
+}
+p {
+  font-size: 50px;
+}
+span {
+  color: cadetblue;
+  background-color: black;
+}
+table {
+
+}
+tr {
+
+}
+td {
+  border: 1px solid rgb(26, 104, 167); /* 선 생성 */
+  padding: 10px; /* 내부 여백 지정 */
+}
