@@ -4,8 +4,8 @@
 ```md
 TIL/
 ├── sparta/
-└── Web/
-    └── HTML_CSS_JS/
+└── FE/
+    └── HTML+CSS+JS/
 ```
 
 ## 📁 디렉토리 설명
@@ -13,8 +13,8 @@ TIL/
 ### sparta/
 스파르타 내일배움캠프 기간동안 작성한 TIL
 
-### Web/
-웹 개발 내용 정리
+### FE/
+프론트엔드 공부 기록
 
-#### HTML_CSS_JS/
-HTML, CSS, JavaScript 학습하며 배운것 정리
+#### HTML+CSS+JS/
+HTML CSS JS 공부 기록
